@@ -1,4 +1,4 @@
-# Audience Builder — for the PMM team
+# Audience Builder
 
 Build HubSpot audiences by describing them in plain language, instead of filing a MOPS ticket and waiting.
 
