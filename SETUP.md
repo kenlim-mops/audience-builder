@@ -42,13 +42,13 @@ To update later: `git -C ~/.claude/skills/audience-builder pull`.
 
 ---
 
-## 4. Option B — Distribute to the PMM team (recommended)
+## 4. Option B — Slack
 
-The lowest-friction surface for a non-technical PMM team is **Claude in Slack**, where connectors are configured once at the workspace/org level and everyone invokes the skill by typing a request.
+The lowest-friction surface for a non-technical team is **Claude in Slack**, where connectors are configured once at the workspace/org level and everyone invokes the skill by typing a request.
 
 1. **Wire the connectors centrally** — have a workspace admin connect and authorize the HubSpot, Notion, and Linear connectors for the Claude workspace, with the access in §2. This means PMM never handles credentials.
 2. **Make the skill available to the team** — publish `audience-builder` as an org/workspace skill (or package it as a plugin) so it loads for PMM users. Point the source at this repo so updates flow from `git`.
-3. **Tell PMM how to invoke it** — they just describe the audience in a channel or DM (see README). No install on their side.
+3. **Tell people how to invoke it** — they just describe the audience in a channel or DM (see README). No install on their side.
 4. **Set the guardrail defaults** you want enforced (compliance intersection is always on; decide whether large/all-contacts audiences require MOPS review before creation).
 
 > Exact publishing steps depend on your Claude workspace/admin settings; if you package it as a plugin, keep this repo as the plugin source so `git` remains the update path.
